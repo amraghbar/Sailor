@@ -1,0 +1,118 @@
+ * {
+     margin: auto;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     background-color: red;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ header {
+     background: white;
+     padding: 20px 0;
+ }
+
+ header .logo {
+     font-size: 30px;
+     margin: 0;
+     padding: 2px;
+     line-height: 1;
+     font-weight: 700;
+     text-transform: uppercase;
+     flex-grow: 1;
+
+ }
+
+ .logo a {
+     color: #556270;
+
+ }
+nav{
+    display: block;
+
+}
+ nav ul {
+     margin: 0;
+     padding: 13px;
+     display: flex;
+     list-style: none;
+     align-items: center;
+     gap: 19px;
+ }
+
+ .active {
+     color: red;
+ }
+
+ nav a {
+     color: black;
+     font-family: "Poppins", sans-serif;
+     padding: 8px 8px;
+font-size: 15px;
+ }
+
+ .auth {
+     background-color: red;
+     color: white;
+     padding: 10px 20px;
+     border: 5px;
+     font-weight: 450;
+ }
+ .burger-icon {
+    width: 35px;
+    transform: rotate(180deg);
+    display: none;
+}
+ .auth:hover {
+    background-color: rgb(255, 113, 113);
+    color: white;
+    padding: 10px 20px;
+    border: 5px;
+    font-weight: 450;
+}
+
+ nav ul a:hover {
+     color: red;
+ }
+ @media screen and (min-width: 0) and (max-width:548px) {
+    header nav  {
+        display: none;
+    }
+     .burger-icon {
+        display: block;
+        height: 25px;
+    }
+ }
+ @media screen and (min-width:548px) and (max-width:600px) {
+    header  nav {
+        display: none;
+    }
+
+     .burger-icon {
+        display: block;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 850px) {
+    header  nav  {
+        display: none;
+    }
+
+.burger-icon {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 850px) and (max-width: 904px) {
+    header  nav  {
+        display: block;
+    }
+
+.burger-icon {
+        display: none;
+    }
+}
